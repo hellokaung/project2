@@ -1,0 +1,1189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link
+      rel="shortcut icon"
+      href="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/60a9628e5cd4201d7753a252_logo-icon-apps-webflow-template.svg"
+      type="image/x-icon"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="./3.4.5"></script> -->
+    <style>
+      .nav-active {
+        color: #4e55da !important;
+        border-top: 3px solid #4e55da;
+      }
+      .nav-active:hover {
+        color: #6a72fb !important;
+      }
+    </style>
+  </head>
+  <body class="">
+    <!-- for navigation -->
+    <nav
+      class="my-nav flex w-[100%] items-center xl:px-[120px] 2xl:px-[310px] py-5 justify-between shadow-md px-[25px] lg:py-0"
+    >
+      <div class="flex justify-items-center items-center gap-[70px]">
+        <img
+          class="hover:scale-110 transition-all"
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/60a9627f10cd7f726ff10b6b_logo-apps-webflow-template.svg"
+          alt="nav icon"
+        />
+        <ul class="lg:flex hidden">
+          <li
+            class="text-[#78798f] cursor-pointer text-xl font-bold py-[30px] px-[20px] nav-active"
+          >
+            Home
+          </li>
+          <li
+            class="text-[#78798f] hover:text-[#6a72fb] cursor-pointer text-xl font-medium py-[30px] px-[20px]"
+          >
+            Pages
+          </li>
+          <li
+            class="text-[#78798f] hover:text-[#6a72fb] cursor-pointer text-xl font-medium py-[30px] px-[20px]"
+          >
+            Blog
+          </li>
+          <li
+            class="text-[#78798f] hover:text-[#6a72fb] cursor-pointer hover:text-[#6a72fb] cursor-pointer text-xl font-medium py-[30px] px-[20px]"
+          >
+            Support
+          </li>
+        </ul>
+      </div>
+
+      <div class="flex justify-items-center items-center gap-[10px]">
+        <span
+          class="text-lg text-[#78798f] font-normal hover:text-[#6a72fb] cursor-pointer"
+          >Cart<span
+            class="ms-2 rounded-full bg-[#6a72fb] px-[8px] py-[2px] text-white center text-sm font-medium"
+            >0</span
+          ></span
+        >
+
+        <button
+          class="flex rounded-full px-[25px] text-xl py-[7px] transition-all bg-[#6a72fb] text-white font-bold xl:me-[30px] hover:bg-[#4e55da] hover:shadow-md hover:-translate-y-1 hidden lg:flex"
+        >
+          <svg
+            class=""
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path
+              fill="currentColor"
+              d="M7.03 13.92h4V5l2.01-.03v8.95h3.99l-5 5Z"
+            />
+          </svg>
+          Download
+        </button>
+
+        <!-- menu icon just view not complete -->
+        <div class="lg:hidden relative cursor-pointer">
+          <label
+            for="nav-menu"
+            class="w-10 flex flex-col gap-2 peer-checked:bg-[#000]"
+          >
+            <input
+              type="checkbox"
+              name="nav-menu"
+              id="nav-menu"
+              class="hidden peer"
+            />
+            <i
+              class="h-[2px] w-full bg-black peer-checked:bg-[#4e55da] peer-checked:rotate-45 transition-all peer-checked:absolute"
+            ></i>
+            <i
+              class="h-[2px] w-full bg-black peer-checked:hidden transition-all"
+            ></i>
+            <i
+              class="h-[2px] w-full bg-black peer-checked:bg-[#4e55da] peer-checked:-rotate-45 transition-all peer-checked:absolute"
+            ></i>
+          </label>
+        </div>
+      </div>
+    </nav>
+
+    <!-- for hero setion -->
+    <section
+      class="bg-[url('https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b37e976cda8f_bg-hero.svg')] lg:bg-top pb-[70px] bg-bottom bg-cover"
+    >
+      <div
+        class="flex items-center xl:ps-[120px] xl:pr-[0] 2xl:ps-[300px] 2xl:pe-[200px] pt-[70px] space-between px-[25px] block flex-col lg:flex-row lg:h-[100vh] lg:ps-[25px] lg:pe-0 xl:h-auto"
+      >
+        <div class="my-hero-setion-left w-[100%] lg:w-5/6 xl:w-[55%]">
+          <img
+            class="w-16 lg:w-20"
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/60a9628e5cd4201d7753a252_logo-icon-apps-webflow-template.svg"
+            alt=""
+          />
+          <h1 class="text-4xl font-black md:text-[52px] leading-none mt-5">
+            A simple, yet effective way to be more productive
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg md:text-2xl mt-5 leading-normal xl:leading-relaxed"
+          >
+            Meet Apps, the new generation to-do app that will take your
+            productivity to the next level. Are you ready to make the leap?
+            Download Apps today — it's free.
+          </p>
+          <div class="flex items-center mt-5 flex-col gap-5 md:flex-row">
+            <button
+              class="flex rounded-full text-2xl items-center justify-center py-[15px] w-[100%] transition-all bg-[#6a72fb] text-white font-bold shadow-lg shadow-[#6973FB] hover:bg-[#4e55da] hover:-translate-y-1 md:me-2 md:w-[35%] lg:px-[40px] lg:w-[auto]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47c-1.34.03-1.77-.79-3.29-.79c-1.53 0-2 .77-3.27.82c-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51c1.28-.02 2.5.87 3.29.87c.78 0 2.26-1.07 3.81-.91c.65.03 2.47.26 3.64 1.98c-.09.06-2.17 1.28-2.15 3.81c.03 3.02 2.65 4.03 2.68 4.04c-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5c.13 1.17-.34 2.35-1.04 3.19c-.69.85-1.83 1.51-2.95 1.42c-.15-1.15.41-2.35 1.05-3.11"
+                />
+              </svg>
+              App Store
+            </button>
+            <button
+              class="flex rounded-full text-2xl items-center justify-center py-[15px] w-[100%] transition-all bg-[#6a72fb] text-white font-bold shadow-lg shadow-[#6973FB] hover:bg-[#4e55da] hover:-translate-y-1 md:me-[30px] md:w-[35%] lg:px-[40px] lg:w-[auto]"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12l-9.85 9.85c-.5-.25-.84-.76-.84-1.35m13.81-5.38L6.05 21.34l8.49-8.49zm3.35-4.31c.34.27.59.69.59 1.19s-.22.9-.57 1.18l-2.29 1.32l-2.5-2.5l2.5-2.5zM6.05 2.66l10.76 6.22l-2.27 2.27z"
+                />
+              </svg>
+              Google Play
+            </button>
+          </div>
+        </div>
+        <div
+          class="my-hero-setion-right mt-10 w-[100%] flex items-center justify-center lg:w-3/6 lg:mt-0 lg:h-full xl:w-[45%]"
+        >
+          <img
+            class="w-full h-full md:w-[80%] lg:w-full lg:object-cover lg:object-left xl:object-center xl:w-[95%] xl:h-auto"
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3490d6cda71_hero-image-apps-template-p-500.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- for our reward -->
+    <div
+      class="bg-[#f8f8fd] w-[100%] py-[50px] xl:px-[120px] 2xl:px-[310px] py-[70px] flex flex-col items-center justify-center lg:px-10"
+    >
+      <h1
+        class="my-rewards-label flex justify-center uppercase font-normal text-xl text-[#78798f]"
+      >
+        Our Rewards
+      </h1>
+      <div
+        class="my-rewards-items w-[100%] flex flex-col items-center justify-center gap-16 pt-8 md:grid md:grid-cols-2 md:gap-20 md:w-[auto] lg:grid-cols-4 lg:w-full lg:justify-around"
+      >
+        <img
+          class=""
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b33dc56cda6a_our-awards-logo-03.svg"
+          alt=""
+        /><img
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3c35e6cda6f_our-awards-logo-01.svg"
+          alt=""
+        /><img
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b33dc56cda6a_our-awards-logo-03.svg"
+          alt=""
+        /><img
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3c35e6cda6f_our-awards-logo-01.svg"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- for feature -->
+    <div
+      class="flex flex-col justify-center items-center mt-[100px] xl:px-[120px] 2xl:px-[310px] px-[25px]"
+    >
+      <p
+        class="my-feature-label uppercase text-[#6970fa] font-bold bg-[#f7f7fc] px-10 py-2 rounded-md text-lg md:text-xl tracking-widest"
+      >
+        feature
+      </p>
+      <h1
+        class="my-feature-desc font-black text-3xl md:text-[40px] text-center leading-tight mt-5"
+      >
+        Powerful features to <br />
+        supercharge your productivity
+      </h1>
+
+      <div class="my-feature-first w-[100%] relative mt-[50px]">
+        <div
+          class="flex items-center shadow-lg shadow-[#e6e7fc] rounded-[30px] border-2 flex-col h-[auto] mt-[10vh] md:mt-[15vh] lg:flex-row lg:h-[65vh] xl:h-[67vh] 2xl:h-[45vh]"
+        >
+          <div
+            class="w-[100%] bg-[#6970fa] rounded-t-[30px] lg:h-[50vh] rounded-s-[0] mb-[-10vh] md:mb-[-15vh] lg:w-[50%] lg:w-[55%] lg:rounded-r-[0] lg:rounded-s-[30px] lg:m-0 lg:h-full"
+          >
+            <img
+              class="h-[auto] w-[auto] object-contain mb-[-10vh] opacity-0 md:ps-24 md:pe-24 md:mb-[-15vh] lg:hidden"
+              src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b35c476cda8c_seamless-team-collaboration-and-task-assignment-p-800.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-[100%] lg:w-[60%] px-[20px] mt-[10vh] py-10 md:p-20 lg:ps-[150px] lg:pe-[100px] lg:mt-0 xl:ps-[170px] xl:pe-[50px]"
+          >
+            <img
+              src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3f6fe6cda77_features-icon-1-apps.svg"
+              alt=""
+            />
+            <h1 class="text-[22px] font-black lg:text-3xl leading-tight mt-5">
+              Seamless team-collaboration & task assignment
+            </h1>
+            <p class="text-[#78798f] font-medium text-xl mt-5 leading-normal">
+              Thanks to the built-in team collaboration features, you will
+              always be on the same page with your teammates.
+            </p>
+          </div>
+        </div>
+
+        <img
+          class="h-[auto] absolute top-0 left-0 w-[auto] object-contain md:ps-24 md:pe-24 lg:h-[75vh] lg:bottom-0 lg:top-auto lg:px-0 xl:left-16 xl:h-[80vh] 2xl:h-[57vh]"
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b35c476cda8c_seamless-team-collaboration-and-task-assignment-p-800.png"
+          alt=""
+        />
+      </div>
+
+      <div class="my-feature-second w-[100%] relative mt-[100px]">
+        <div
+          class="flex items-center shadow-lg shadow-[#e6e7fc] rounded-[30px] border-2 flex-col h-[auto] mt-[10vh] md:mt-[15vh] lg:flex-row lg:h-[65vh] xl:h-[67vh] 2xl:h-[45vh]"
+        >
+          <div
+            class="w-[100%] bg-[#6970fa] rounded-t-[30px] lg:h-[50vh] rounded-s-[0] mb-[-10vh] md:mb-[-15vh] lg:hidden"
+          >
+            <img
+              class="h-[auto] w-[auto] object-contain mb-[-10vh] opacity-0 md:ps-24 md:pe-24 md:mb-[-15vh]"
+              src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/601de5ade7f81e5365d51128_instegrations-apps-template-webflow-p-800.png"
+              alt=""
+            />
+          </div>
+          <div
+            class="w-[100%] px-[10px] py-10 mt-[10vh] md:p-20 lg:w-[60%] lg:pe-[150px] xl:ps-[100px] lg:m-0 lg:ps-7 lg:w-[55%] xl:ps-[50px]"
+          >
+            <img
+              src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3705e6cda87_features-icon-2-apps.svg"
+              alt=""
+            />
+            <h1
+              class="text-[22px] lg:text-[30px] font-black leading-tight mt-5"
+            >
+              Built-in integrations that adapt to your unique workflow
+            </h1>
+            <p class="text-[#78798f] font-medium text-xl mt-5 leading-normal">
+              With our 15 native integrations, and 500+ integrations through
+              Zapier, you will take your productivity to the next level.
+            </p>
+          </div>
+          <div
+            class="w-[40%] h-[100%] bg-[#6970fa] rounded-e-[30px] hidden lg:block lg:w-[45%] xl:w-[50%]"
+          ></div>
+        </div>
+
+        <img
+          class="h-[auto] absolute top-0 left-0 w-[auto] object-contain md:ps-24 md:pe-24 lg:h-[70vh] lg:bottom-0 lg:top-auto lg:px-0 lg:left-auto lg:right-0 xl:right-14 xl:h-[80vh] 2xl:h-[57vh]"
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/601de5ade7f81e5365d51128_instegrations-apps-template-webflow-p-800.png"
+          alt=""
+        />
+      </div>
+    </div>
+    <!-- amazing features -->
+    <div
+      class="flex flex-col items-center justify-center xl:px-[120px] 2xl:px-[310px] w-[100%] mt-[100px] px-[25px]"
+    >
+      <h1
+        class="my-amazing-features-label w-[100%] text-2xl font-black lg:text-[30px] lg:font-bold leading-tight text-center"
+      >
+        And many more amazing features!
+      </h1>
+      <div
+        class="grid gap-14 mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-[140px]"
+      >
+        <div class="my-amazing-features-1">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b35b4f6cda85_secondary-icon-01.svg"
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] lg:font-bold leading-tight"
+          >
+            Seamless Sync
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            Any update on your tasks will be instantly synced through all your
+            devices, no extra work needed.
+          </p>
+        </div>
+        <div class="my-amazing-features-2">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b370de6cda69_secondary-icon-02.svg"
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] lg:font-bold leading-tight"
+          >
+            Smart Tags
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            Smartly categorize your new or current tasks with tags to keep all
+            your work organized.
+          </p>
+        </div>
+        <div class="my-amazing-features-3">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3a7366cda75_secondary-icon-03.svg"
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] lg:font-bold leading-tight"
+          >
+            On-point Notifications
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            Receive smart notifications about tasks expiring soon, or by any
+            other custom trigger you need.
+          </p>
+        </div>
+        <div class="my-amazing-features-4">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b33d0e6cda70_secondary-icon-04.svg "
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] lg:font-bold leading-tight"
+          >
+            Powerful Automation
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            Don't work over and over again, take advantage of all our automation
+            features to make your work easier.
+          </p>
+        </div>
+        <div class="my-amazing-features-5">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3651c6cda68_secondary-icon-05.svg"
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] font-bold leading-tight"
+          >
+            Multiple Views
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            View your tasks in List, Board or Timeline view, depending on what’s
+            better for your project.
+          </p>
+        </div>
+        <div class="my-amazing-features-6">
+          <img
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b367b26cda74_secondary-icon-06.svg"
+            alt=""
+          />
+          <h1
+            class="text-xl font-black mt-5 xl:text-[25px] lg:font-bold leading-tight"
+          >
+            100% Customizable
+          </h1>
+          <p
+            class="text-[#78798f] font-medium text-lg xl:text-xl mt-5 leading-normal"
+          >
+            Thanks to our custom fields, you can customize Apps to be perfectly
+            tailored to your needs.
+          </p>
+        </div>
+      </div>
+      <button
+        id="my-amazing-features-button"
+        class="my-16 flex rounded-full px-5 lg:px-[40px] text-xl py-[15px] xl:mb-[100px] transition-all bg-[#6a72fb] text-white font-bold me-[30px] hover:bg-[#4e55da] hover:-translate-y-1 md:px-10"
+      >
+        <svg
+          class=""
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="currentColor"
+            d="M7.03 13.92h4V5l2.01-.03v8.95h3.99l-5 5Z"
+          />
+        </svg>
+        Download App
+      </button>
+    </div>
+
+    <!-- for rating -->
+    <div class="w-full bg-[#6970fa] py-5 lg:py-[100px] xl:h-[90vh] 2xl:h-auto">
+      <div
+        class="xl:px-[120px] 2xl:px-[310px] flex items-center px-[25px] flex-col md:flex-row md:py-12 lg:py-7"
+      >
+        <div
+          class="my-rating-left w-100% lg:w-1/2 xl:pe-[50px] pb-10 md:w-[50%] md:pe-10 lg:pe-20"
+        >
+          <h1
+            class="text-3xl font-black lg:text-[32px] text-white xl:font-bold leading-tight mt-[50px]"
+          >
+            Don’t just take our word for it!
+          </h1>
+          <p
+            class="text-white font-medium text-lg md:text-2xl mt-5 leading-normal"
+          >
+            Thousands of professionals and business are already enjoying Apps.
+            Hear what some of they are saying!
+          </p>
+          <button
+            class="mt-10 flex rounded-full px-[40px] text-2xl py-[15px] transition-all bg-white text-[#6a72fb] font-bold me-[30px] hover:-translate-y-1 text-xl"
+          >
+            <svg
+              class="text-[#6a72fb]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M7.03 13.92h4V5l2.01-.03v8.95h3.99l-5 5Z"
+              />
+            </svg>
+            Download App
+          </button>
+        </div>
+        <div class="my-rating-right w-full md:w-1/2 h-[100%]">
+          <swiper-container
+            class="mySwiper"
+            pagination="true"
+            pagination-clickable="true"
+            navigation="false"
+            space-between="30"
+            loop="true"
+          >
+            <swiper-slide>
+              <div class="bg-white rounded-3xl py-10 px-10 px-5">
+                <div
+                  class="flex items-center justify-between border-b-2 pb-5 flex-col items-start lg:flex-row"
+                >
+                  <div class="flex items-center">
+                    <img
+                      class="rounded-lg w-20 h-20 object-fit"
+                      src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b34fe26cda97_john-carter.jpg"
+                      alt=""
+                    />
+                    <div class="ps-10">
+                      <p class="font-bold text-lg">John Carter</p>
+                      <p
+                        class="text-[#78798f] font-medium text-lg mt-1 leading-normal"
+                      >
+                        VP of Sales at Webflow
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    class="mt-5"
+                    src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b310bf6cda8d_review-5-stars.svg"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="text-[#78798f] font-medium text-lg mt-1 leading-relaxed mt-5 mb-12"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem soluta animi fugit culpa optio vitae impedit
+                  recusandae autem, similique, dolor odit id quam, odio atque
+                  illo velit! Iste, assumenda neque.
+                </p>
+              </div>
+            </swiper-slide>
+            <swiper-slide>
+              <div class="bg-white rounded-3xl py-10 px-10 px-5">
+                <div
+                  class="flex items-center justify-between border-b-2 pb-5 flex-col items-start lg:flex-row"
+                >
+                  <div class="flex items-center">
+                    <img
+                      class="rounded-lg w-20 h-20 object-fit"
+                      src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b34fe26cda97_john-carter.jpg"
+                      alt=""
+                    />
+                    <div class="ps-10">
+                      <p class="font-bold text-lg">John Carter</p>
+                      <p
+                        class="text-[#78798f] font-medium text-lg mt-1 leading-normal"
+                      >
+                        VP of Sales at Webflow
+                      </p>
+                    </div>
+                  </div>
+                  <img
+                    class="mt-5"
+                    src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b310bf6cda8d_review-5-stars.svg"
+                    alt=""
+                  />
+                </div>
+                <p
+                  class="text-[#78798f] font-medium text-lg mt-1 leading-relaxed mt-5 mb-12"
+                >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Exercitationem soluta animi fugit culpa optio vitae impedit
+                  recusandae autem, similique, dolor odit id quam, odio atque
+                  illo velit! Iste, assumenda neque.
+                </p>
+              </div>
+            </swiper-slide>
+          </swiper-container>
+        </div>
+      </div>
+    </div>
+    <!-- for fandq -->
+    <div
+      class="flex flex-col justify-center items-center mt-[100px] lg:px-[150px] px-[25px]"
+    >
+      <p
+        class="my-fq-label uppercase text-[#6970fa] font-bold bg-[#f7f7fc] px-10 py-2 rounded-md text-lg lg:text-xl tracking-widest"
+      >
+        FAQS
+      </p>
+      <h1
+        class="my-fq-cap font-black text-3xl md:text-4xl text-center leading-tight mt-5"
+      >
+        Frequently Asked Questions
+      </h1>
+      <p
+        class="my-fq-desc text-[#78798f] font-medium text-lg md:text-2xl mt-5 leading-normal text-center w-[95%] xl:w-[55%] 2xl:w-[45%]"
+      >
+        Have questions? We’ve answers. If you can’t find what we are looking
+        for, feel free to
+        <a href="" class="underline text-[#6970fa]">get in touch.</a>
+      </p>
+      <div
+        class="my-fq-questions rounded-md border-2 w-[100%] cursor-pointer mt-10 xl:w-2/3 2xl:w-[45%]"
+      >
+        <div
+          class="min-h-24 flex gap-2 items-center justify-between py-5 px-3 lg:px-10 border-b-2 md:min-h-10 md:px-8 lg:min-h-20"
+        >
+          <p class="text-black font-normal text-lg leading-normal text-start">
+            Can I request for new features for App?
+          </p>
+
+          <svg
+            class="text-[#6970fa] w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" />
+          </svg>
+        </div>
+
+        <div
+          class="min-h-24 flex gap-2 items-center justify-between py-5 px-3 lg:px-10 border-b-2 md:min-h-10 md:px-8 lg:min-h-20"
+        >
+          <p class="text-black font-normal text-lg leading-normal text-start">
+            Can I dowonload App data into Excel or?
+          </p>
+
+          <svg
+            class="text-[#6970fa] w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" />
+          </svg>
+        </div>
+
+        <div
+          class="min-h-24 flex gap-2 items-center justify-between py-5 px-3 lg:px-10 border-b-2 md:min-h-10 md:px-8 lg:min-h-20"
+        >
+          <p class="text-black font-normal text-lg leading-normal text-start">
+            Does App team offer 1-on-1 support?
+          </p>
+
+          <svg
+            class="text-[#6970fa] w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" />
+          </svg>
+        </div>
+
+        <div
+          class="min-h-24 flex gap-2 items-center justify-between py-5 px-3 lg:px-10 md:min-h-10 md:px-8 lg:min-h-20"
+        >
+          <p class="text-black font-normal text-lg leading-normal text-start">
+            Can I iinvite my teammate to App?
+          </p>
+
+          <svg
+            class="text-[#6970fa] w-10"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- discover -->
+    <div
+      class="bg-[#f7f7fc] xl:px-[120px] 2xl:px-[310px] flex gap-10 my-[130px] py-14 lg:py-[100px] px-[25px] flex-col lg:flex-row"
+    >
+      <div
+        class="my-discover-left xl:pe-[50px] lg:pe-[50px] w-[100%] lg:w-[40%]"
+      >
+        <h1
+          class="text-3xl md:text-[37px] lg:text-4xl font-black leading-tight"
+        >
+          Discover how Apps is boosting team’s productivity worldwide
+        </h1>
+        <p
+          class="text-[#78798f] font-medium text-xl md:text-2xl mt-5 leading-normal"
+        >
+          Watch our case study of how Google’s marketing team boost their
+          productivity by collaborating on Apps.
+        </p>
+        <button
+          class="mt-10 flex rounded-full px-[40px] text-xl lg:text-2xl py-[15px] transition-all bg-[#e3e5ff] text-[#6a72fb] hover:text-[#6a72fb] font-bold me-[30px] hover:-translate-y-1"
+        >
+          <svg
+            class="text-[#6a72fb]"
+            xmlns="http://www.w3.org/2000/svg"
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+          >
+            <path fill="currentColor" d="M8 5.14v14l11-7z" />
+          </svg>
+
+          Play video
+        </button>
+      </div>
+      <div class="my-discover-right xl:ps-20 ps-0 lg:w-[60%]">
+        <img
+          class="rounded-3xl lg:rounded-[40px] hover:scale-95 transition-all cursor-pointer md:w-5/6 lg:w-full"
+          src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3768f6cda9a_video-thumbnail-p-800.png"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- productivity -->
+    <div
+      class="flex flex-col justify-center items-center mt-[100px] xl:px-[120px] 2xl:px-[310px] px-[25px]"
+    >
+      <h1
+        class="my-pdc-label text-3xl font-black lg:font-bold md:text-4xl lg:text-[40px] text-center leading-tight lg:px-[200px]"
+      >
+        Ready to take your productivity to the next level? Download Apps today!
+      </h1>
+      <p
+        class="my-pdc-desc ctext-[#78798f] font-medium text-xl md:text-2xl lg:text-[25px] mt-5 leading-normal text-center lg:w-[60%]"
+      >
+        Are you ready to make the leap? Download Apps for iOS or Android today —
+        it's free.
+      </p>
+      <div class="my-pdc-items flex mt-10 gap-10 flex-col lg:flex-row">
+        <div
+          class="bg-[#f7f7fc] rounded-3xl flex flex-col items-center justify-center"
+        >
+          <div class="lg:ps-16 pt-12 lg:pe-10 px-5 md:px-20 md:pt-20">
+            <h1 class="text-[30px] font-black xl:font-bold">Android</h1>
+            <p
+              class="text-[#78798f] font-medium text-xl mt-2 lg:mt-5 leading-normal lg:pe-14"
+            >
+              Are you ready to make the leap? Download Apps for Android today —
+              it's free.
+            </p>
+            <button
+              class="mt-5 rounded-full px-5 lg:px-[40px] text-xl py-[15px] transition-all bg-[#6970fa] text-[#fff] font-bold me-[30px] hover:bg-[#4e55da] hover:-translate-y-1"
+            >
+              Download for Android
+            </button>
+          </div>
+          <img
+            class="mt-10"
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b325ed6cda9c_android-phone-p-500.png"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="bg-[#6970fa] rounded-3xl flex flex-col items-center justify-center"
+        >
+          <div class="lg:ps-16 pt-12 lg:pe-10 px-5 md:px-20 md:pt-20">
+            <h1 class="text-[30px] font-black xl:font-bold text-white">
+              iOS & iPadOS
+            </h1>
+            <p
+              class="text-[#edefff] font-medium text-xl mt-5 leading-normal lg:pe-14"
+            >
+              Are you ready to make the leap? Download Apps for iOS today — it's
+              free.
+            </p>
+            <button
+              class="mt-5 rounded-full px-5 lg:px-[40px] text-xl py-[15px] transition-all text-[#6970fa] bg-[#fff] font-bold me-[30px] hover:-translate-y-1"
+            >
+              Download for iOS
+            </button>
+          </div>
+          <img
+            class="mt-10"
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b3662d6cdab1_ios-ipad-os-phone-p-500.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- for lastest new -->
+    <div
+      class="flex flex-col justify-center items-center mt-[100px] xl:px-[120px] 2xl:px-[310px] pt-20 items-center justify-center bg-[#f7f7fc] px-[25px]"
+    >
+      <h1
+        class="my-article-label lg:font-bold text-3xl font-black xl:text-4xl text-center leading-tight xl:px-[200px] px-10"
+      >
+        Our Lastest News
+      </h1>
+      <p
+        class="my-article-desc text-[#78798f] font-medium text-xl md:text-2xl xl:text-[25px] mt-5 leading-normal text-center xl:w-[65%] w-[100%] md:px-10"
+      >
+        What’s new on Apps. Tips for productivity, team workflows, task,
+        projects management and much more!
+      </p>
+      <div
+        class="my-article-items grid gap-5 mt-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div
+          class="rounded-3xl shadow-md shadow-[#e6e7fc] hover:-translate-y-1 transition-all cursor-pointer"
+        >
+          <img
+            class="bg-[#6970fa] rounded-t-3xl"
+            src="https://assets-global.website-files.com/5fce8923c6d8b356f26cda48/5fce8923c6d8b329916cdb25_article-image-03-apps-template-p-500.png"
+            alt=""
+          />
+          <div class="px-10 py-10">
+            <span
+              class="uppercase text-[#6970fa] font-medium bg-indigo-50 px-10 py-2 rounded-md text-md tracking-widest"
+            >
+              Update
+            </span>
+            <h1 class="text-xl font-bold mt-5 lg:mt-10">
+              Introducing new Apps Desgin for our iOS App
+            </h1>
+            <p class="uppercase mt-3 mb-3 lg:mb-7 text-[#78798f]">
+              Setember 01,2022
+            </p>
+            <p class="text-[#78798f] text-lg pb-10 font-medium">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              in? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laborum, in? Lorem ipsum dolor sit amet
+            </p>
+            <a
+              class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-bold lg:mb-10"
+              href=""
+              >Read Article</a
+            >
+          </div>
+        </div>
+        <div
+          class="rounded-3xl shadow-md shadow-[#e6e7fc] hover:-translate-y-1 transition-all cursor-pointer"
+        >
+          <img
+            class="bg-[#6970fa] rounded-t-3xl"
+            src="https://assets-global.website-files.com/5fce8923c6d8b356f26cda48/5fce8923c6d8b3605b6cdb28_article-image-06-apps-template-p-500.png"
+            alt=""
+          />
+          <div class="px-10 py-10">
+            <span
+              class="uppercase text-[#6970fa] font-medium bg-indigo-50 px-10 py-2 rounded-md text-md tracking-widest"
+            >
+              Integrations
+            </span>
+            <h1 class="text-xl font-bold mt-5 lg:mt-10">
+              Apps Integrations to Boost Your Productivity
+            </h1>
+            <p class="uppercase mt-3 mb-3 lg:mb-7 text-[#78798f]">
+              Setember 01,2022
+            </p>
+            <p class="text-[#78798f] text-lg pb-10 font-medium">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              in? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laborum, in? Lorem ipsum dolor sit amet
+            </p>
+            <a
+              class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-bold lg:mb-10"
+              href=""
+              >Read Article</a
+            >
+          </div>
+        </div>
+        <div
+          class="rounded-3xl shadow-md shadow-[#e6e7fc] hover:-translate-y-1 transition-all cursor-pointer"
+        >
+          <img
+            class="bg-[#6970fa] rounded-t-3xl"
+            src="https://assets-global.website-files.com/5fce8923c6d8b356f26cda48/601de6b68e3631455603dd40_integrations-blog-apps-webflow-template-p-500.png"
+            alt=""
+          />
+          <div class="px-10 py-10">
+            <span
+              class="uppercase text-[#6970fa] font-medium bg-indigo-50 px-10 py-2 rounded-md text-md tracking-widest"
+            >
+              Integrations
+            </span>
+            <h1 class="text-xl font-bold mt-5 lg:mt-10">
+              Introducing new Apps Desgin for our iOS App
+            </h1>
+            <p class="uppercase mt-3 mb-3 lg:mb-7 text-[#78798f]">
+              Setember 01,2022
+            </p>
+            <p class="text-[#78798f] text-lg pb-10 font-medium">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum,
+              in? Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Laborum, in? Lorem ipsum dolor sit amet
+            </p>
+            <a
+              class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-bold lg:mb-10"
+              href=""
+              >Read Article</a
+            >
+          </div>
+        </div>
+      </div>
+      <button
+        class="my-article-button mt-[50px] flex rounded-full px-7 lg:px-[40px] text-xl l py-[15px] transition-all bg-[#6a72fb] text-white font-bold me-[30px] mb-20 hover:bg-[#4e55da] hover:-translate-y-1"
+      >
+        View More Article
+      </button>
+    </div>
+
+    <!-- for footer -->
+    <footer class="my-footer border-t">
+      <div
+        class="grid lg:grid-cols-3 gap-10 xl:px-[120px] 2xl:px-[310px] py-16 border-b-2 px-[25px] grid-cols-1 md:grid-cols-2 md:gap-0"
+      >
+        <div class="pe-10">
+          <img
+            class="hover:scale-110 transition-all"
+            src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/60a9627f10cd7f726ff10b6b_logo-apps-webflow-template.svg"
+            alt=""
+          />
+          <p class="text-[#78798f] text-lg font-medium py-5">
+            A simple, yet effective way to be more productive.
+          </p>
+          <div class="flex items-center gap-5">
+            <svg
+              class="hover:scale-110 transition-all text-[#6a72fb]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M5 3h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2m13 2h-2.5A3.5 3.5 0 0 0 12 8.5V11h-2v3h2v7h3v-7h3v-3h-3V9a1 1 0 0 1 1-1h2V5z"
+                fill="currentColor"
+              />
+            </svg>
+            <svg
+              class="hover:scale-110 transition-all text-[#6a72fb]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M22.46 6c-.77.35-1.6.58-2.46.69c.88-.53 1.56-1.37 1.88-2.38c-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29c0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15c0 1.49.75 2.81 1.91 3.56c-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.2 4.2 0 0 1-1.93.07a4.28 4.28 0 0 0 4 2.98a8.52 8.52 0 0 1-5.33 1.84q-.51 0-1.02-.06C3.44 20.29 5.7 21 8.12 21C16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56c.84-.6 1.56-1.36 2.14-2.23"
+              />
+            </svg>
+            <svg
+              class="hover:scale-110 transition-all text-[#6a72fb]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4zm9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3"
+              />
+            </svg>
+            <svg
+              class="hover:scale-110 transition-all text-[#6a72fb]"
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              viewBox="0 0 24 24"
+            >
+              <path
+                fill="currentColor"
+                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2zm-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93zM6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37z"
+              />
+            </svg>
+          </div>
+        </div>
+
+        <div class="flex gap-10 flex-col md:flex-row">
+          <div>
+            <p class="font-bold text-xl">Menu</p>
+            <ul class="mt-5">
+              <li class="py-1">
+                <a class="text-[#6a72fb] hover:text-[#6a72fb] text-xl" href=""
+                  >Home</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Home v2</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  About Us</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Blog</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Support</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href=""
+                  >Careers
+                </a>
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Pricing V1</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href=""
+                  >Pricing V2
+                </a>
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Job Post</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Reviews</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div>
+            <p class="font-bold text-xl">Utility Pages</p>
+            <ul class="mt-5">
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href=""
+                  >Styleguide</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  404 Not Found</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Password Protected</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Licenses</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href="">
+                  Start Here</a
+                >
+              </li>
+              <li class="py-1">
+                <a class="text-[#78798f] hover:text-[#6a72fb] text-xl" href=""
+                  >Changelog
+                </a>
+              </li>
+              <li class="py-1">
+                <a
+                  class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-bold text-xl"
+                  href=""
+                >
+                  More Webflow Templates</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p class="font-bold text-xl">Download our App</p>
+          <p class="text-[#78798f] py-2 text-lg">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Odio
+            egestas quam porta.
+          </p>
+          <div
+            class="flex items-center mt-5 gap-5 w-[100%] flex-col md:flex-row"
+          >
+            <a class="w-full" href="">
+              <img
+                class="rounded-full px-[10px] py-[15px] h-16 lg:h-[50px] w-[100%] md:px-3 md:py-5 md:h-14 lg:py-4 transition-all bg-[#6a72fb] shadow-lg shadow-[#6973FB] hover:bg-[#4e55da] hover:-translate-y-1"
+                src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b352f16cda62_app-store-button.svg"
+                alt=""
+              />
+            </a>
+            <a class="w-full" href="">
+              <img
+                class="rounded-full px-[10px] py-[15px] h-16 lg:h-[50px] w-[100%] md:h-14 md:px-0 md:py-5 lg:py-4 transition-all bg-[#6a72fb] shadow-lg shadow-[#6973FB] hover:bg-[#4e55da] hover:-translate-y-1"
+                src="https://assets-global.website-files.com/5fce8923c6d8b35a596cda43/5fce8923c6d8b30bb46cda66_play-store-button.svg"
+                alt=""
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="py-10 border-top-2 lg:px-[150px] flex items-center justify-items-center px-[25px]"
+      >
+        <span
+          class="font-medium text-md xl:text-xl text-[#78798f] text-center w-[100%] md:text-md"
+        >
+          © Copyright Apps | Designed by
+          <a
+            class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-medium text-md xl:text-xl md:text-md"
+            href=""
+            >BRIX Templates</a
+          >
+          - Powered by
+          <a
+            class="underline text-[#6970fa] hover:text-[#4e55da] transition-all font-medium text-md xl:text-xl md:text-md"
+            href="https://appsecommercetemplate.webflow.io/"
+            target="_blank"
+            >Webflow</a
+          >
+        </span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      // navi
+      ScrollReveal().reveal(".my-nav", { delay: 200 });
+
+      // hero setion
+      ScrollReveal().reveal(".my-hero-setion-left", { delay: 500 });
+      ScrollReveal().reveal(".my-hero-setion-right", { delay: 800 });
+
+      // rewards
+      ScrollReveal().reveal(".my-rewards-label", { delay: 300 });
+      ScrollReveal().reveal(".my-rewards-items", { delay: 500 });
+      // feature
+      ScrollReveal().reveal(".my-feature-label", { delay: 300 });
+      ScrollReveal().reveal(".my-feature-first", {
+        duration: 500,
+        distance: "100px",
+        scale: 0.7,
+        opacity: 0.8,
+        delay: 500,
+        reset: true,
+      });
+      ScrollReveal().reveal(".my-feature-second", {
+        duration: 400,
+        distance: "100px",
+        scale: 0.7,
+        opacity: 0.8,
+        delay: 500,
+        reset: true,
+      });
+
+      // amazing features
+      ScrollReveal().reveal(".my-amazing-features-label", { delay: 300 });
+      ScrollReveal().reveal(".my-amazing-features-1", { delay: 400 });
+      ScrollReveal().reveal(".my-amazing-features-2", { delay: 500 });
+      ScrollReveal().reveal(".my-amazing-features-3", { delay: 600 });
+      ScrollReveal().reveal(".my-amazing-features-4", { delay: 700 });
+      ScrollReveal().reveal(".my-amazing-features-5", { delay: 800 });
+      ScrollReveal().reveal(".my-amazing-features-6", { delay: 900 });
+      ScrollReveal().reveal("#my-amazing-features-button", {
+        distance: "50px",
+      });
+
+      // rating
+      ScrollReveal().reveal(".my-rating-left", { delay: 500 });
+      ScrollReveal().reveal(".my-rating-right", { delay: 800 });
+
+      // f and q
+      ScrollReveal().reveal(".my-fq-label", { delay: 300 });
+      ScrollReveal().reveal(".my-fq-cap", { delay: 500 });
+      ScrollReveal().reveal(".my-fq-desc", { delay: 700 });
+      ScrollReveal().reveal(".my-fq-questions", { delay: 900 });
+
+      // discover
+      ScrollReveal().reveal(".my-discover-left", { delay: 500 });
+      ScrollReveal().reveal(".my-discover-right", { delay: 800 });
+
+      //producitty
+      ScrollReveal().reveal(".my-pdc-label", { delay: 300 });
+      ScrollReveal().reveal(".my-pdc-desc", { delay: 500 });
+      ScrollReveal().reveal(".my-pdc-items", {
+        duration: 400,
+        distance: "100px",
+        scale: 0.7,
+        opacity: 0.8,
+        delay: 700,
+        reset: true,
+      });
+
+      // article
+      ScrollReveal().reveal(".my-article-label", { delay: 300 });
+      ScrollReveal().reveal(".my-article-desc", { delay: 500 });
+      ScrollReveal().reveal(".my-article-items", { delay: 800 });
+      ScrollReveal().reveal(".my-article-button", { delay: 500 });
+
+      // footer
+      ScrollReveal().reveal(".my-footer", { delay: 300 });
+    </script>
+  </body>
+</html>
